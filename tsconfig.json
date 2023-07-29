@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "include": ["src/**/*", "src/**/*.vue", "env.d.ts", "auto-imports.d.ts", "components.d.ts"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "compilerOptions": {
+    // ...
+    // "types": ["element-plus/global"]
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
